@@ -8,8 +8,11 @@
 
 # Creates a symlink for <app>/.meteor/local to point to ~/<app>/local.
 
-# Create the new folder.
+# Create the local folder in the VM.
 mkdir -p ~/$1/local
+
+# Make sure the local folder from the host is removed.
+rm -rf $1/.meteor/local
 
 # Setup the link.
 ln -s ~/$1/local $1/.meteor/local
