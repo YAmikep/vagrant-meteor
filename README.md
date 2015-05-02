@@ -35,7 +35,7 @@ $ meteor create myapp
 Run the script to setup the local folder:
 
 ```
-$ ./setup-local.sh myapp 
+$ ./setup-local.sh myapp
 ```
 
 Run your meteor app:
