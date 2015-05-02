@@ -7,6 +7,7 @@ By default, a Meteor app can't be run in the host-shared vagrant folder, because
 The Vagrantfile also:
 - Provisions the VM by installing Meteor.
 - Enables port forwarding on the VM for the default meteor port.
+- Adds hostname of the VM (meteor.dev) to /etc/hosts
 
 **Note: On Windows, the shell that runs `vagrant up` and `vagrant ssh` must be run as administrator.**
 
@@ -44,4 +45,4 @@ $ cd myapp
 $ meteor
 ```
 
-Point a browser on your host to [http://localhost:3000](http://localhost:3000). You should see the meteor app.
+Point a browser on your host to [http://localhost:3000](http://localhost:3000) or [http://meteor.dev:3000](http://meteor.dev:3000). You should see the meteor app.
